@@ -46,9 +46,58 @@
     <![endif]-->
     
     <!--headerIncludes-->
-    
+    <style media="screen">
+    	*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0855ae;
+}
+.popup{
+    background-color: #ffffff;
+    width: 420px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+		background: #03549a;
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup h2{
+	margin-top: -20px;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+    </style>
 </head>
 <body>
+
     
     <!--begin top-intro -->
     <div class="top-intro" id="top-intro">
@@ -214,16 +263,15 @@
                                 </li>
                             </ul>
                         </li>
-
-                       
-
+						<li><a href="contact-us.html" class="menu-last">Careers</a></li>
+						<li><a href="contact-us.html" class="menu-last">Check Status</a></li>
                         <li><a href="contact-us.html" class="menu-last">Contact</a></li>
 
                        
                         <li class="dropdown hidden-nav-item"><a href="#" data-toggle="dropdown" class="dropdown-toggle">How to Reach Us</a>
                             <ul role="menu" class="dropdown-menu">
                                 <li><a tabindex="-1" href="#"><i class="icon icon-call-phone"></i>+91 9000000000</a></li>
-                                <li><a tabindex="-1" href="#"><i class="icon icon-pin-map"></i> 123, Regal Garden, London, UK</a></li>
+                                <li><a tabindex="-1" href="#"><i class="icon icon-pin-map"></i> B-39 building no-4, tower, bannerghatta road, Bangalore</a></li>
                             </ul>
                         </li>
                 
@@ -823,7 +871,21 @@
       
     </section>
     <!--end section-white-->
-
+     <div class="popup">
+        <button id="close">&times;</button>
+        <h2>Registred Your Self</h2>
+        <form id="contact-form" class="contact" action="https://demo.epic-webdesign.com/tf-Pan India Finance/php/contact.php" method="post">
+                    
+                        <input class="contact-input white-input" required="" name="contact_names" placeholder="Full Name*" type="text">
+                        <input class="contact-input white-input" required="" name="contact_email" placeholder="Email Adress*" type="email">
+                        <input class="contact-input white-input" required="" name="contact_phone" placeholder="Phone Number*" type="text">
+                        <textarea class="contact-commnent white-input" rows="2" cols="20" name="contact_message" placeholder="Your Message...">
+                        </textarea>
+                        <input value="Send Message" id="submit-button" class="contact-submit" type="submit">
+                        
+                    </form>
+        
+    </div>
     <!--begin section-image -->
     <section class="section-image-testim">
         
@@ -1226,7 +1288,21 @@
 
 
                 </script>
+<script type="text/javascript">
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        2000 
+    )
+});
 
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+    </script>
 
     <!-- Load JS here for greater good =============================-->
     <script src="js/jquery-1.11.3.min.js"></script>
