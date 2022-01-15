@@ -46,6 +46,10 @@
     <![endif]-->
     
     <!--headerIncludes-->
+	
+
+
+
     <style media="screen">
     	*,
 *:before,
@@ -69,6 +73,29 @@ body{
     font-family: "Poppins",sans-serif;
     display: none; 
     text-align: center;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
 }
 .popup button{
     display: block;
@@ -263,8 +290,8 @@ body{
                                 </li>
                             </ul>
                         </li>
-						<li><a href="contact-us.html" class="menu-last">Careers</a></li>
-						<li><a href="contact-us.html" class="menu-last">Check Status</a></li>
+						<li><a href="career.html" class="menu-last">Careers</a></li>
+						<li><a href="status.html" class="menu-last">Check Status</a></li>                       
                         <li><a href="contact-us.html" class="menu-last">Contact</a></li>
 
                        
@@ -613,7 +640,7 @@ body{
                                     
                                     <img src="images/testim1.jpg" alt="Picture" class="autor_pic">
                                     
-                                    <p class="autor"><span>Cristina Richards</span><br> CEO - Your Company </p>
+                                    <p class="autor"><span>Cristina Chaudhari</span><br> CEO </p>
                                 
                                 </div>
                                 <!--end testimonials_item -->
@@ -637,7 +664,7 @@ body{
                                     
                                     <img src="images/testim2.jpg" alt="Picture" class="autor_pic">
                                     
-                                    <p class="autor"><span>John Doe</span><br> General Manager - Your Company </p>
+                                    <p class="autor"><span>Manish kumar</span><br> General Manager </p>
                                 
                                 </div>
                                 <!--end testimonials_item -->
@@ -661,7 +688,7 @@ body{
                                     
                                     <img src="images/testim3.jpg" alt="Picture" class="autor_pic">
                                     
-                                    <p class="autor"><span>John Doe</span><br> General Manager - Your Company </p>
+                                    <p class="autor"><span>Prateek Kumar</span><br> General Manager - Your Company </p>
                                 
                                 </div>
                                 <!--end testimonials_item -->
@@ -873,15 +900,20 @@ body{
     <!--end section-white-->
      <div class="popup">
         <button id="close">&times;</button>
-        <h2>Registred Your Self</h2>
+        <h2>Apply For Loan</h2>
         <form id="contact-form" class="contact" action="https://demo.epic-webdesign.com/tf-Pan India Finance/php/contact.php" method="post">
                     
                         <input class="contact-input white-input" required="" name="contact_names" placeholder="Full Name*" type="text">
                         <input class="contact-input white-input" required="" name="contact_email" placeholder="Email Adress*" type="email">
                         <input class="contact-input white-input" required="" name="contact_phone" placeholder="Phone Number*" type="text">
-                        <textarea class="contact-commnent white-input" rows="2" cols="20" name="contact_message" placeholder="Your Message...">
-                        </textarea>
-                        <input value="Send Message" id="submit-button" class="contact-submit" type="submit">
+                       <label for="country">Loan For</label>
+    <select id="country" name="country">
+      <option value="australia">Personal Loan </option>
+      <option value="canada">Home Loan</option>
+      <option value="usa">Business Loan</option>
+	  <option value="usa">Other Loan</option>
+    </select>
+                        <input value="Apply Now" id="submit-button" class="contact-submit" type="submit">
                         
                     </form>
         
@@ -910,7 +942,7 @@ body{
 
                                 <p class="testim-text white margin-bottom-20">" Pellentesque etsum is laoret mauris, dapibis etim etsum, vivamus eti nibh ligula saepe present. Quis netsi etsa lorem nibh ligula et evenit praesent autim fugit justo et sed tempor  et evenit praesent autim fugit justo et sed temp et evenit. "</p>
 
-                                <p class="autor-testim"><span>Maria Richards</span> - Business Magazine</p>
+                                <p class="autor-testim"><span>MARIA Chandra</span> - Business Magazine</p>
 
                             </div>
 
@@ -920,7 +952,7 @@ body{
 
                                 <p class="testim-text white margin-bottom-20">"Pellentesque etsum is laoret mauris, dapibis etim etsum, vivamus eti nibh ligula saepe present. Quis netsi etsa lorem nibh ligula et evenit praesent autim fugit justo et sed tempor  et evenit praesent autim fugit justo et sed temp et evenit."</p>
 
-                                <p class="autor-testim"><span>John Doe</span> - The Times </p>
+                                <p class="autor-testim"><span>Prateek Kumar</span> - The Times </p>
 
                             </div>
 
@@ -930,7 +962,7 @@ body{
                                 
                                 <p class="testim-text white margin-bottom-20">"Pellentesque etsum is laoret mauris, dapibis etim etsum, vivamus eti nibh ligula saepe present. Quis netsi etsa lorem nibh ligula et evenit praesent autim fugit justo et sed tempor  et evenit praesent autim fugit justo et sed temp et evenit."</p>
 
-                                <p class="autor-testim"><span>John Smith</span> - Business Forecast </p>
+                                <p class="autor-testim"><span>Pawan  Kumar</span> - Business Forecast </p>
 
                             </div>
 
