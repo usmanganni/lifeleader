@@ -46,6 +46,78 @@
     <![endif]-->
     
     <!--headerIncludes-->
+	<style media="screen">
+    	*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0855ae;
+}
+.popup{
+    background-color: #ffffff;
+    width: 420px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+		background: #03549a;
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup h2{
+	margin-top: -20px;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+
+    </style>
     
 </head>
 <body>
@@ -134,9 +206,7 @@
                     <!-- begin nav -->
                     <ul class="nav navbar-nav text-right">
 
-                        <li class="dropdown"><a href="index.html" data-toggle="dropdown" class="dropdown-toggle selected">HOME</a>
-                            
-                        </li>
+                        <li><a href="index.html" class="menu-last">Home</a></li>
 
                         <li class="dropdown"><a href="about-us.html" data-toggle="dropdown" class="dropdown-toggle">ABOUT</a>
                             <ul class="dropdown-menu">
@@ -285,125 +355,153 @@
     <!--end breadcrumb-wrapper-->
 
     <!--begin section-white -->
-    <section class="section-white">
+     <section class="section-white-services"> 
+          
+        <!--begin container-->
+        <div class="container"> 
 
-            <!--begin container-->
-            <div class="container">
-
-                <!--begin row-->
-                <div class="row margin-bottom-40">
-                
-                    <!--begin col-md-12-->
-                    <div class="col-md-12 text-center">
-                        <h2 class="section-title dark-blue">Core Services We Offer</h2>
-                        
-                        <p class="section-subtitle"></p>
-                    </div>
-                    <!--end col-md-12-->
-                
-                </div>
-                <!--end row-->
-                
-                <!--begin row-->
-                <div class="row margin-bottom-40">
-
-                    <!--begin col-md-4-->
-                    <div class="col-md-4">
-
-                        <div class="service-wrapper3 text-center">
-                            <div class="ico-wrap3">
-                                <i class="flaticon-businessman-9 ico-unicolor2"></i>
-                            </div>
-                            <h3> Personal Loan</h3>
-                            <p><br></p>
-                        </div>
-
-                    </div>
-                    <!--end col-md-4-->
-
-                    <!--begin col-md-4-->
-                    <div class="col-md-4">
-
-                        <div class="service-wrapper3-bg text-center">
-                            <div class="ico-wrap3">
-                                <i class="flaticon-businessman-10 ico-unicolor2"></i>
-                            </div>
-                            <h3>Home Loan</h3>
-                            <p><br></p>
-                        </div>
-
-                    </div>
-                    <!--end col-md-4-->
-
-                    <!--begin col-md-4-->
-                    <div class="col-md-4">
-
-                        <div class="service-wrapper3 text-center">
-                            <div class="ico-wrap3">
-                                <i class="flaticon-contract ico-unicolor2"></i>
-                            </div>
-                            <h3>Business loan</h3>
-                            <p><br></p>
-                        </div>
-
-                    </div>
-                    <!--end col-md-4-->
-
-                </div>
-                <!--end row-->
-
-                <!--begin row-->
-                <div class="row">
-
-                    <!--begin col-md-4-->
-                    <div class="col-md-4">
-
-                        <div class="service-wrapper3-bg text-center">
-                            <div class="ico-wrap3">
-                                <i class="flaticon-coin-2 ico-unicolor2"></i>
-                            </div>
-                            <h3>Loan Against Property</h3>
-                            <p><br></p>
-                        </div>
-
-                    </div>
-                    <!--end col-md-4-->
-
-                    <!--begin col-md-4-->
-                    <div class="col-md-4">
-
-                        <div class="service-wrapper3 text-center">
-                            <div class="ico-wrap3">
-                                <i class="flaticon-businessman ico-unicolor2"></i>
-                            </div>
-                            <h3>Two wheeler Loan</h3>
-                            <p><br></p>
-                        </div>
-
-                    </div>
-                    <!--end col-md-4-->
-
-                    <!--begin col-md-4-->
-                    <div class="col-md-4">
-
-                        <div class="service-wrapper3-bg text-center">
-                            <div class="ico-wrap3">
-                                <i class="flaticon-browser-1 ico-unicolor2"></i>
-                            </div>
-                            <h3>Agriculture Loan</h3>
-                            <p><br></p>
-                        </div>
-
-                    </div>
-                    <!--end col-md-4-->
+            <!--begin row-->
+            <div class="row">
+            
+                <!--begin col-md-12-->
+                <div class="col-md-12 text-center margin-bottom-20">
+                    <h2 class="section-title dark-blue">Our Main Services</h2>
                     
+                    <p class="section-subtitle"></p>
                 </div>
-                <!--end row-->
-
+                <!--end col-md-12-->
+            
             </div>
-            <!--end container-->
-    
+            <!--end row-->
+            
+            <!--begin row-->
+            <div class="row">
+
+                <!--begin col-sm-4-->
+                <div class="col-sm-4 margin-bottom-10">
+
+                    <div class="service-wrapper2">
+                        <div class="ico-wrap2">
+                           
+							<img src="images/5.jpg" alt="Picture" class="width-100 fluid">
+                        </div>
+                        <span class="service-nb">01</span>
+                        <h3>Home Loan</h3>                                                
+                       <button class="btn-sm btn-blue" data-tab="visit" onclick="openForm()">Apply For loan</button>							
+                        
+                    </div>
+                </div>
+                <!--end col-sm-4-->
+
+                <!--begin col-sm-4-->
+                <div class="col-sm-4 margin-bottom-10">
+
+                    <div class="service-wrapper2">
+                        <div class="ico-wrap2">
+                            <img src="images/7.jpg" alt="Picture" class="width-100 fluid">
+                        </div>
+                        <span class="service-nb">02</span>
+                            <h3>Personal Loan</h3>                                                
+                           <button class="btn-sm btn-blue" data-tab="visit" onclick="openForm()">Apply For loan</button>							
+                        
+                    </div>
+                </div>
+                <!--end col-sm-4-->
+
+                <!--begin col-sm-4-->
+                <div class="col-sm-4 margin-bottom-10">
+
+                    <div class="service-wrapper2">
+                        <div class="ico-wrap2">
+                           <img src="images/8.jpg" alt="Picture" class="width-100 fluid">
+                        </div>
+                        <span class="service-nb">03</span>
+                            <h3>Business Loan</h3>                                                
+                           <button class="btn-sm btn-blue" data-tab="visit" onclick="openForm()">Apply For loan</button>							
+                        
+                    </div>
+                </div>
+                <!--end col-sm-4-->
+            </div>
+            <!--end row-->
+
+            <!--begin row-->
+            <div class="row">
+
+                <!--begin col-sm-4-->
+                <div class="col-sm-4">
+
+                    <div class="service-wrapper2">
+                        <div class="ico-wrap2">
+                            <img src="images/2.jpg" alt="Picture" class="width-100 fluid">
+                        </div>
+                        <span class="service-nb">04</span>
+                            <h3>Two Whealer Loans</h3>                                                
+                           <button class="btn-sm btn-blue" data-tab="visit" onclick="openForm()">Apply For loan</button>							
+                        
+                    </div>
+                </div>
+                <!--end col-sm-4-->
+
+                <!--begin col-sm-4-->
+                <div class="col-sm-4">
+
+                    <div class="service-wrapper2">
+                        <div class="ico-wrap2">
+                           <img src="images/10.jpg" alt="Picture" class="width-100 fluid">
+                        </div>
+                        <span class="service-nb">10</span>
+                            <h3>Commercial Vehicle Loan</h3>                                                
+                           <button class="btn-sm btn-blue" data-tab="visit" onclick="openForm()">Apply For loan</button>							
+                        
+                    </div>
+                </div>
+                <!--end col-sm-4-->
+
+                <!--begin col-sm-4-->
+                <div class="col-sm-4">
+
+                    <div class="service-wrapper2">
+                        <div class="ico-wrap2">
+                            <img src="images/4.jpg" alt="Picture" class="width-100 fluid">
+                        </div>
+                        <span class="service-nb">06</span>
+                            <h3>Loan Against Property</h3>  
+                               
+                           <button class="btn-sm btn-blue" data-tab="visit" onclick="openForm()">Apply For loan</button>							
+                        
+                    </div>
+                </div>
+                <!--end col-sm-4-->
+                
+            </div>
+            <!--end row-->
+        
+        </div>
+        <!--end container-->
+      
     </section>
+    <!--end section-white-->
+     <div class="popup"  id="myForm">
+        <button id="close">&times;</button>
+        <h2>Apply For Loan</h2>
+        <form id="contact-form" class="contact" action="https://demo.epic-webdesign.com/tf-Pan India Finance/php/contact.php" method="post">
+                    
+                        <input class="contact-input white-input" required="" name="contact_names" placeholder="Full Name*" type="text">
+                        <input class="contact-input white-input" required="" name="contact_email" placeholder="Email Adress*" type="email">
+                        <input class="contact-input white-input" required="" name="contact_phone" placeholder="Phone Number*" type="text">
+                       <label for="country">Loan For</label>
+    <select id="country" name="country">
+      <option value="australia">Personal Loan </option>
+      <option value="canada">Home Loan</option>
+      <option value="usa">Business Loan</option>
+	  <option value="usa">Other Loan</option>
+    </select>
+                        <input value="Apply Now" id="submit-button" class="contact-submit" type="submit">
+                        
+                    </form>
+        
+    </div>
     <!--end section-white -->
     
     <!--begin section-image-->
@@ -864,7 +962,16 @@
     <script src="js/jquery.easypiechart.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/custom.js"></script>
-    
+    <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";  
+  window.location.href="services.html"; 
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 </body>
 <!-- Mirrored from demo.epic-webdesign.com/tf-Pan India Finance/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Jan 2022 07:40:23 GMT -->
 </html>
