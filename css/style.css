@@ -1520,8 +1520,8 @@ ul.service-features li i {
 .ico-wrap2{
     z-index: 100;
     position: relative;
-    width: 80px;
-    height: 60px;
+    width: 300px;
+    height: 200px;
 }
 
 .service-wrapper2 i {
@@ -2653,8 +2653,8 @@ input.contact-input{
     padding-right:2%;
 	margin-bottom:15px;
 	color: #656565;
-	background-color: #f6f7f8;
-    border: 1px solid #eaeaea!important;
+	background-color: #b4c3d5;
+    border: 1px solid #4c4444!important;
     font-size:14px;
 	float:left;
 	-webkit-border-radius: 5px 5px 5px 5px;
@@ -2757,7 +2757,7 @@ textarea.contact-commnent{
     padding-top:10px;
     padding-bottom:10px;
 	color: #656565;
-	background-color: #f1f7f7;
+	background-color: #858d8d;
 	opacity: 0.68;
     border: 1px solid #eaeaea!important;
     font-size:14px;
