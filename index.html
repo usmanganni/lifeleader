@@ -127,7 +127,7 @@ input[type=submit]:hover {
 
     
     <!--begin top-intro -->
-    <div class="top-intro" id="top-intro">
+    <div class="top-intro" data-tab="visit">
     
         <!--begin container-->
         <div class="container"> 
@@ -141,29 +141,19 @@ input[type=submit]:hover {
                     <!--begin header_social -->
                     <ul class="header_social">
                         <li>
-                            <a href="#" class="twitter">
-                                <i class="icon icon-twitter"></i>
-                            </a>
+                            <a href="https://twitter.com/i/flow/login"><i class="icon icon-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="pinterest">
-                                <i class="icon icon-pinterest"></i>
-                            </a>
+                            <a href="https://in.pinterest.com/login/"><i class="icon icon-pinterest"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="facebook">
-                                <i class="icon icon-facebook"></i>
-                            </a>
+                           <a href="https://www.facebook.com/"><i class="icon icon-facebook"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="instagram">
-                                <i class="icon icon-instagram"></i>
-                            </a>
+                            <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="icon icon-instagram"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="skype">
-                                <i class="icon icon-skype"></i>
-                            </a>
+                            <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1642301520&rver=7.1.6819.0&wp=MBI_SSL&wreply=https%3A%2F%2Flw.skype.com%2Flogin%2Foauth%2Fproxy%3Fclient_id%3D360605%26redirect_uri%3Dhttps%253A%252F%252Fsecure.skype.com%252Fportal%252Flogin%253Freturn_url%253Dhttps%25253A%25252F%25252Fsecure.skype.com%25252Fportal%25252Foverview%26response_type%3Dpostgrant%26state%3Db4dea2c78ff8821029913a2e&lc=1033&id=293290&mkt=en-US&psi=skype&lw=1&cobrandid=2befc4b5-19e3-46e8-8347-77317a16a5a5&client_flight=ReservedFlight33%2CReservedFlight67" class="skype"><i class="icon icon-skype"></i></a>
                         </li>
                     </ul>
                     <!--end header_social -->
@@ -194,7 +184,7 @@ input[type=submit]:hover {
     <!--end top-intro -->
 
     <!--begin header -->
-    <header class="header">
+    <header class="header" id="formpo">
 
         <!-- begin navbar -->
         <div class="navbar yamm navbar-default ">
@@ -210,7 +200,7 @@ input[type=submit]:hover {
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.html" class="navbar-brand brand scrool" id="logo"><span>Pan</span> India Finance</a>
+                    <a href="index.html" class="navbar-brand brand scrool" id="logo"> <img src="images/logo.png" class="width-100 fluid" alt="about-us-image"></a>
                 </div>
                 <!-- end navbar-header -->
 
@@ -241,7 +231,7 @@ input[type=submit]:hover {
                                                 <li>
                                                   <p class="nav-title">Loans <br><span class="nav-subtitle">How we can help you.</span></p>
                                                 </li>
-                                                <li><a href="services.html"><i class="icon icon-gears-setting"></i> Loans Services</a></li>
+                                                <li><a href="services.html"><i class="icon icon-gears-setting"></i>Services</a></li>
 											</ul>
                                                
                                         </div>
@@ -252,7 +242,20 @@ input[type=submit]:hover {
 
                         <li class="dropdown"><a href="portfolio-main.html" data-toggle="dropdown" class="dropdown-toggle">Services</a>
                           <ul role="menu" class="dropdown-menu">
-                            <li><a href="services.html"> Loan Services</a></li>
+                            <li><a href="services.html"> Business Loan</a></li>
+							<li class="divider"></li>
+							<li><a href="services.html"> Home Loan</a></li>
+							<li class="divider"></li>
+							<li><a href="services.html"> Personal Loan</a></li>
+							<li class="divider"></li>
+							<li><a href="services.html"> Loan Against Property</a></li>
+							<li class="divider"></li>
+							<li><a href="services.html">Two wheeler Loan</a></li>
+							<li class="divider"></li>
+							<li><a href="services.html">Agriculture Loan</a></li>
+							<li class="divider"></li>							
+							<li><a href="services.html">Commercial Vehicle Loan</a></li>
+							
                             <li class="divider"></li>
 
                           </ul>
@@ -803,8 +806,8 @@ input[type=submit]:hover {
                             <i class="flaticon-businessmen-2 ico-unicolor2"></i>
                         </div>
                         <span class="service-nb">01</span>
-                        <h3>Financial Consulting</h3>                                                
-                        <p><br></p>
+                        <h3>Home Loan</h3>                                                
+                       <button class="btn-sm btn-blue" data-tab="visit" onclick="openForm()">Apply For loan</button>							
                         
                     </div>
                 </div>
@@ -818,8 +821,8 @@ input[type=submit]:hover {
                             <i class="flaticon-businessman-11 ico-unicolor2"></i>
                         </div>
                         <span class="service-nb">02</span>
-                            <h3>Experts Advisors</h3>                                                
-                            <p><br></p>
+                            <h3>Personal Loan</h3>                                                
+                           <button class="btn-sm btn-blue" data-tab="visit" onclick="openForm()">Apply For loan</button>							
                         
                     </div>
                 </div>
@@ -833,8 +836,8 @@ input[type=submit]:hover {
                             <i class="flaticon-piggy-bank-1 ico-unicolor2"></i>
                         </div>
                         <span class="service-nb">03</span>
-                            <h3>Insurance Consulting</h3>                                                
-                            <p><br></p>
+                            <h3>Business Loan</h3>                                                
+                           <button class="btn-sm btn-blue" data-tab="visit" onclick="openForm()">Apply For loan</button>							
                         
                     </div>
                 </div>
@@ -853,8 +856,8 @@ input[type=submit]:hover {
                             <i class="flaticon-coin-2 ico-unicolor2"></i>
                         </div>
                         <span class="service-nb">04</span>
-                            <h3>Taxes Planning</h3>                                                
-                            <p><br></p>
+                            <h3>Business Loan</h3>                                                
+                           <button class="btn-sm btn-blue" data-tab="visit" onclick="openForm()">Apply For loan</button>							
                         
                     </div>
                 </div>
@@ -868,8 +871,8 @@ input[type=submit]:hover {
                             <i class="flaticon-businessman ico-unicolor2"></i>
                         </div>
                         <span class="service-nb">05</span>
-                            <h3>Retirement Planning</h3>                                                
-                            <p><br></p>
+                            <h3>Commercial Vehicle Loan</h3>                                                
+                           <button class="btn-sm btn-blue" data-tab="visit" onclick="openForm()">Apply For loan</button>							
                         
                     </div>
                 </div>
@@ -883,8 +886,9 @@ input[type=submit]:hover {
                             <i class="flaticon-browser-1 ico-unicolor2"></i>
                         </div>
                         <span class="service-nb">06</span>
-                            <h3>Business Loans</h3>                                                
-                            <p><br></p>
+                            <h3>Loan Against Property</h3>  
+                               
+                           <button class="btn-sm btn-blue" data-tab="visit" onclick="openForm()">Apply For loan</button>							
                         
                     </div>
                 </div>
@@ -898,7 +902,7 @@ input[type=submit]:hover {
       
     </section>
     <!--end section-white-->
-     <div class="popup">
+     <div class="popup"  id="myForm">
         <button id="close">&times;</button>
         <h2>Apply For Loan</h2>
         <form id="contact-form" class="contact" action="https://demo.epic-webdesign.com/tf-Pan India Finance/php/contact.php" method="post">
@@ -952,7 +956,7 @@ input[type=submit]:hover {
 
                                 <p class="testim-text white margin-bottom-20">"Pellentesque etsum is laoret mauris, dapibis etim etsum, vivamus eti nibh ligula saepe present. Quis netsi etsa lorem nibh ligula et evenit praesent autim fugit justo et sed tempor  et evenit praesent autim fugit justo et sed temp et evenit."</p>
 
-                                <p class="autor-testim"><span>Prateek Kumar</span> - The Times </p>
+                                <p class="autor-testim"><span>Prateek Kumar</span> - The Indian </p>
 
                             </div>
 
@@ -990,6 +994,41 @@ input[type=submit]:hover {
     
     </section>
     <!--end section-image-->
+
+
+<section class="section-white">
+        
+        <!--begin container-->
+        <div class="container">
+<h2 style="text-align:center;">Gallery</h2>
+            <!--begin row-->
+            <div class="row">
+
+                <!--begin col-md-6 -->
+                <div class="col-md-3">
+				<img src="images/1.jpg" alt="Picture" class="width-100 fluid">
+				</div>
+				
+				<div class="col-md-3">
+				<img src="images/2.jpg" alt="Picture" class="width-100 fluid">
+				</div>
+				<div class="col-md-3">
+				<img src="images/3.jpg" alt="Picture" class="width-100 fluid">
+				</div>
+				<div class="col-md-3">
+				<img src="images/4.jpg" alt="Picture" class="width-100 fluid">
+				</div>
+                <!--end col-md-8 -->
+
+            </div>
+            <!--end row-->
+
+        </div>
+        <!--end container-->
+    
+    </section>
+
+
 
     <!--begin section-white -->
     <section class="section-white">
@@ -1105,7 +1144,21 @@ input[type=submit]:hover {
     
     </section>
     <!--end section-white-->
+	<div class="container">
 
+            <!--begin row-->
+            <div class="row">
+			 <div class="col-md-12">
+			 <br>
+          <img src="images/banks.jpg" alt="Picture" class="">
+		  
+		  </div>
+		  
+            </div>
+            <!--end row-->
+<br>
+        </div>
+		  
     <!--begin fun-facts -->
     <div class="fun-facts-wrapper3">
 
@@ -1272,29 +1325,19 @@ input[type=submit]:hover {
                                 Follow Us:
                             </li>
                             <li>
-                            <a href="#">
-                                <i class="icon icon-twitter"></i>
-                            </a>
+                            <a href="https://twitter.com/i/flow/login"><i class="icon icon-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="icon icon-pinterest"></i>
-                            </a>
+                            <a href="https://in.pinterest.com/login/"><i class="icon icon-pinterest"></i></a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="icon icon-facebook"></i>
-                            </a>
+                            <a href="https://www.facebook.com/"><i class="icon icon-facebook"></i></a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="icon icon-instagram"></i>
-                            </a>
+                            <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="icon icon-instagram"></i></a>
                         </li>
                         <li>
-                            <a href="#">
-                                <i class="icon icon-skype"></i>
-                            </a>
+                            <a href="https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=13&ct=1642301520&rver=7.1.6819.0&wp=MBI_SSL&wreply=https%3A%2F%2Flw.skype.com%2Flogin%2Foauth%2Fproxy%3Fclient_id%3D360605%26redirect_uri%3Dhttps%253A%252F%252Fsecure.skype.com%252Fportal%252Flogin%253Freturn_url%253Dhttps%25253A%25252F%25252Fsecure.skype.com%25252Fportal%25252Foverview%26response_type%3Dpostgrant%26state%3Db4dea2c78ff8821029913a2e&lc=1033&id=293290&mkt=en-US&psi=skype&lw=1&cobrandid=2befc4b5-19e3-46e8-8347-77317a16a5a5&client_flight=ReservedFlight33%2CReservedFlight67" class="skype"><i class="icon icon-skype"></i></a>
                         </li>
                         </ul>
                         <!--end footer_social -->
@@ -1344,7 +1387,16 @@ document.querySelector("#close").addEventListener("click", function(){
     <script src="js/plugins.js"></script>
     <script src="js/custom.js"></script>
    
-    
+    <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";  
+  window.location.href="index.html"; 
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 </body>
 <!-- Mirrored from demo.epic-webdesign.com/tf-Pan India Finance/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Jan 2022 07:39:41 GMT -->
 </html>
